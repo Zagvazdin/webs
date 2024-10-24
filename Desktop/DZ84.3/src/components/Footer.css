@@ -1,0 +1,249 @@
+.mobile-menu {
+    display: none;
+}
+.mobile-menu.open {
+    display: block;
+}
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+.subscription {
+  min-height: 448px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../public/statik/images/fon.svg');
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Измените на center или space-around */
+  align-items: center; /* Выровнять по центру */
+  gap: 223.26px;
+}
+
+
+.subscription__staff {
+  text-align: center;
+  
+  
+  }
+.subscription__staff__figure-text {
+  
+  margin-top: 30px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+.subscription__input-email {
+  display: grid;
+  justify-items: center;
+}
+.subscription__input-email__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+  margin-bottom: 32px;
+}
+.subscription__input-email__title {
+  font-weight: 600;
+  font-size: 24px;
+}
+.subscription__input-email__submit {
+  display: flex;
+}
+.subscription__input-email__submit__subscribe {
+  padding: 0 20px 0 20px;
+  height: 49px;
+  border-radius: 30px 0 0 30px;
+  border: none;
+  width: 256px;
+  background: #E1E1E1;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  color: #222224;
+  opacity: 0.67;
+
+}
+.subscription__input-email__submit__btn {
+  border-radius: 0 30px 30px 0;
+  border: none;
+  width: 100px;
+  background: #F16D7F;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  text-align: center;
+  color: #FFFFFF;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
+.footer {
+  background: #222222;
+  min-height: 79px;
+  display: flex;
+  justify-content: center;
+  gap: 665px;
+  
+  align-items: center;
+  width: 100%; /* Задаем ширину 100% */
+  position:absolute; /* Убедимся, что позиционирование корректное */
+  left: 0; /* Убираем любые отступы слева */
+  right: 0; /* Убираем любые отступы справа */
+  margin: 50px 0; /* Убираем автоцентрирование по горизонтали */
+  
+}
+
+
+
+.footer p {
+  color: white; /* Задаем белый цвет текста */
+  
+  
+}
+.footer__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f41f1f;
+  
+}
+.footer__items {
+  
+  display: flex;
+  gap: 7.29px;
+  
+}
+.footer__items__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  
+}
+.footer__items__item:hover {
+  background-color: #F16D7F;
+}
+.footer__items__item:hover path {
+  fill: white;
+}
+
+
+
+
+
+/* Медиа-запросы */
+@media (max-width: 768px) {
+.subscription {
+    flex-direction: column;
+    padding: 53px 0;
+  }
+}
+/* Медиа-запросы для различных экранов */
+@media (max-width: 1140px) {
+    .subscription {
+        gap: 150px; /* Уменьшаем gap для более узких экранов */
+    }
+}
+
+@media (max-width: 768px) {
+    .subscription {
+        flex-direction: column; /* Располагаем элементы в столбик */
+        padding: 53px 0; /* Добавляем отступ сверху и снизу */
+        gap: 30px; /* Уменьшаем отступы между элементами */
+    }
+}
+
+@media (max-width: 320px) {
+    .subscription {
+        gap: 20px; /* Дополнительное уменьшение отступов */
+    }
+
+    .subscription__input-email__title {
+        font-size: 20px; /* Уменьшаем размер шрифта для маленьких экранов */
+    }
+
+    .subscription__input-email__text {
+        font-size: 16px; /* Уменьшаем текст на небольших экранах */
+    }
+
+    .subscription__input-email__submit__subscribe,
+    .subscription__input-email__submit__btn {
+        width: 100%; /* Ширина кнопок 100% */
+        padding: 10px; /* Отступы для кнопок */
+    }
+}
+/* Медиа-запросы для различных экранов */
+@media (max-width: 1140px) {
+    .footer {
+        gap: 100px; /* Уменьшаем отступы между элементами для узких экранов */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+      padding: 30px;
+      justify-content: space-between; /* Распределение элементов по краям */
+      gap: 20px; /* Уменьшаем отступы между элементами */
+      align-items: stretch; /* Чтобы элементы занимали полную ширину */
+      min-height: 100px; /* Задаем минимальную высоту футера для комфортного отображения */
+    
+    }
+
+    .footer__text {
+        font-size: 14px; /* Уменьшаем размер шрифта для планшетов и мобил */
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        gap: 10px; /* further decrease the gaps for very small screens */
+        flex-direction: column; /* Расположение элементов в колонку */
+        flex-direction: column; /* Расположение элементов в колонку */
+        justify-content: center; /* Выравнивание по вертикали */
+        align-items: center; /* Выравнивание по горизонтали */
+        text-align: center; /* Центрирование текста внутри футера */
+    }
+
+    .footer__text {
+        font-size: 12px; /* Уменьшаем размер шрифта для маленьких экранов */
+    }
+
+    .footer__items__item {
+        width: 24px; /* Уменьшаем размер иконок */
+        height: 24px;
+    }
+}
+
+  

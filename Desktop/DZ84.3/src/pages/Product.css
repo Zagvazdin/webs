@@ -1,0 +1,218 @@
+
+.top-head {
+    display: flex;
+    text-align: center;
+    padding-left: 230px;
+    
+
+}
+.top-head {
+     display: flex;
+     text-align: center;
+     padding-left: 230px; /* Отступ слева */
+     
+     /* Убираем высоту, чтобы она рассчитывалась автоматически */
+    }
+    
+.top-head > * {
+    margin-right: 737px; /* Устанавливаем отступ между элементами по горизонтали */
+}
+
+/* Убираем последний отступ для последнего элемента, если это необходимо */
+.top-head > :last-child {
+    margin-right: 0; /* Убираем отступ справа у последнего элемента */
+}
+
+    
+
+
+.main-product {
+    background-color: #F7F7F7;
+    position: relative;
+  }
+  .main-product__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11px;
+    padding-bottom: 42px;
+    box-sizing: border-box;
+    border: 1px solid rgb(234, 234, 234);
+  }
+  
+  .main-product__button {
+    width: 47px;
+    height: 47px;
+    border: none;
+    background-color: #c0c0bb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .main-product__button:hover path {
+    fill: #F16D7F;
+  }
+  .main-product__center {
+    display: flex;
+    justify-content: center;
+    background: #FFF;
+  }
+  .main-product__info {
+    margin-top: -65px;
+    margin-bottom: 129px;
+    padding: 65px 250px;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(234, 234, 234);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-product__info h4 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #F16D7F;
+  }
+  .main-product__info span {
+    width: 63px;
+    border: 2px solid #F16D7F;
+    margin: 12.1px 0;
+  }
+  .main-product__info h2 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #4D4D4D;
+  }
+  .main-product__info__text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #5E5E5E;
+    margin: 48.41px 0 32.27px;
+  }
+  .main-product__info__price {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #F16D7F;
+    margin-bottom: 65.04px;
+  }
+  .main-product__info__features {
+    margin: 0px 0 48.91px;
+    padding-top: 65.05px;
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+    width: 641px;
+    border-top: 1px solid rgb(234, 234, 234);
+  }
+  .main-product__info__features button {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #6F6E6E;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .main-product__info__klick {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .main-product__info__button {
+    padding: 14.62px 57px 8.57px 24px;
+    display: flex;
+    align-items: center;
+    gap: 22.91px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #F16D7F;
+    border: 1px solid #F16D7F;
+  }
+  .main-product__info__button:hover {
+    background-color: #F16D7F;
+    color: white;
+    transition: 0.3s;
+  }
+  .main-product__info__button:hover path {
+    fill: white;
+  }
+  .main-product__bottom {
+    background: #FFF;
+    margin-bottom: 128px;
+  }
+  .main-product__bottom__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+.main-product__bottom {
+    display: flex; /* Используем flexbox для размещения */
+    gap: 30px;
+    justify-content: center; /* Выравнивание по центру */
+    align-items: center; /* Вертикальное центровка элементов */
+}
+@media (max-width: 768px) {
+    .top-head__breadcrumbs {
+           display: flex; /* Используем flexbox для выравнивания элементов */
+           justify-content: center; /* Центрируем элементы по горизонтали */
+           align-items: center; /* Центрируем элементы по вертикали */
+           padding-left: 10px; /* Уменьшаем отступы для маленьких экранов */
+           padding-right: 10px;
+           margin: 0;
+           width: 100%; /* Устанавливаем ширину в 100% */
+           box-sizing: border-box; /* Учитываем отступы и границы */
+        }
+
+     
+
+    .main-product__info {
+        padding: 20px; /* Уменьшаем отступы вокруг описания продукта */
+    }
+
+    .main-product__bottom {
+        display: flex; /* Используем flexbox для упрощения адаптивного расположения */
+        flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+        justify-content: center; /* Центрируем карточки */
+    }
+
+    .product-item {
+        flex: 1 1 45%; /* Делаем карточки гибкими, каждую из которых можно сделать шире или уже */
+        margin: 10px; /* Добавляем отступы между карточками */
+    }
+}
+@media (max-width: 768px) {
+    .top-head {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-product__info {
+        padding: 20px;
+    }
+
+    .product-item {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        flex: 1 1 100%;
+    }
+}
+@media (max-width: 480px) {
+    .product-item {
+        flex: 1 1 100%; /* На совсем маленьких экранах карточки занимают всю ширину */
+    }
+}
